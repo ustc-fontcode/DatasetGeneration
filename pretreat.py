@@ -123,11 +123,13 @@ if __name__ == "__main__":
     #     img = crop_image(img)
     #     img.save("data/MicroSun/" + f)
 
-    path = "data/newdata/error-test/"
+    # path = "data/newdata/error-test/"
+    path = sys.argv[1]
     files = os.listdir(path)
     for f in files:
         print(f)
         img = Image.open(path + f)
         img = crop_image(img)
-        img.save("data/error-test/" + f)
+        # img.save("data/error-test/" + f)
+        img.save(sys.argv[2]+f)
 
