@@ -1,15 +1,15 @@
 # Generate Training Data
-```python
+```bash
 python generator.py --mode train
 ```
 
 # Gnerate ErrorTest Data
-```python
+```bash
 python generator.py --mode error
 ```
 
 # Pretreat PhotoData
-```python
+```bash
 python pretreat.py [PhotoPath] [SavePath]
 # example
 # python pretreat.py data/newdata/PhotoData/ data/newdata/TrainData/
