@@ -17,16 +17,13 @@ def generate_doc_with_code_and_bias(bits: list,
                                     font_names: list,
                                     bias={}) -> list:
     """Generate document with given text, bits to be encoded, and font names.
-
     When text is longer than bits, font_names[0] will be used.
     When text is shorter than bits, extra bits will be ignored.
-
     Params:
         bits: List of integers, e.g. [0, 1, 0, 0]. Don't have to be 0 or 1, because we can have more than two kinds of fonts.
         text: e.g. "你好世界".
         font_names: Name of font, or path of font file.
         bias:
-
     Returns:
         List of PIL.Image.
     """
@@ -129,11 +126,12 @@ def generate_doc_with_random_code(n: int):
 
 
 if __name__ == "__main__":
-    '''
+    
     sep_img = Image.open("data/seperate.jpeg")
     # 生成文档，敲回车生成下一页
-    '''
+    
     chars = read_chinese.read_chinese3000()
+    chars = chars * 10
     # generate_doc(chars, config.FONT_NAME_Fangzheng)
     NUM = len(chars)
     
