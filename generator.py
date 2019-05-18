@@ -116,8 +116,8 @@ def generate_doc_with_random_code(n: int):
         #                                        bias={1: (0, 0)})
         
         docs = generate_doc_with_code_and_bias(bits,
-                                               text_epo, ['data/fonts/HuaWenSun.ttf', 'data/fonts/FangZhengKaiTi.ttf'],
-                                               bias={1: (0, 0)})
+                                               text_epo, ['data/fonts/HuaWenSun.ttf', 'data/fonts/MicroSun.ttf'],
+                                               bias={0: (0, -8)})
         
         for img in docs:
             img = cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
