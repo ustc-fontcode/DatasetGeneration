@@ -129,7 +129,7 @@ if __name__ == "__main__":
     for f in files:
         print(f)
         img = Image.open(path + f)
-        img = crop_image(img)
+        img = crop_image(img).convert('RGB')
         # img.save("data/error-test/" + f)
         img.save(sys.argv[2]+f)
 

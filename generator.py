@@ -131,7 +131,7 @@ if __name__ == "__main__":
     # 生成文档，敲回车生成下一页
     
     chars = read_chinese.read_chinese3000()
-    chars = chars * 10
+    chars = chars
     # generate_doc(chars, config.FONT_NAME_Fangzheng)
     NUM = len(chars)
     
